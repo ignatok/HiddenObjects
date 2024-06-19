@@ -20,17 +20,6 @@ public class Level
     {
         _resources?.Unload();
     }
-
-    public void DeleteResourcesWithoutProgress()
-    {
-        _resources.Delete();
-    }
-
-    public void ClearLoadedResources()
-    {
-        if (_progress.IsComplete)
-            _resources.Delete();
-    }
     
     public void Restart()
     {
